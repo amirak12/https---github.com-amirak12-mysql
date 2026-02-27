@@ -1,11 +1,8 @@
-mysql commands? kiram to salmasi koskesh
-
+mysql commands? dorod to salmasi
 CREATE DATABASE mydb;
-
 DROP DATABASE mydb;
-CREATE TABLE mytable(id INT() AUTO_INCREMENT ,name VARCHAR(50),uuid int(40),PRIMARY KEY(id))
-
-ALTER TABLE mytable ADD COLUMN myfield INT(30)
-ALTER TABLE mytable REMOVE COLUMN myfield INT(30)
-INSERT INTO TABLENAME(`name`,`uuid`) VALUES("kos",12312),("mamad",1324);
+CREATE TABLE mytable(id INT() AUTO_INCREMENT ,name VARCHAR(50),uuid int(40),PRIMARY KEY(id));
+ALTER TABLE mytable ADD COLUMN myfield INT(30);
+ALTER TABLE mytable REMOVE COLUMN myfield INT(30);
+INSERT INTO TABLENAME(`name`,`uuid`) VALUES("salam",12312),("ali",1324);
 UPDATE SET `uuid` = 24 WHERE `id` = 1;
