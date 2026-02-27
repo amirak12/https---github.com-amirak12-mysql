@@ -11,4 +11,10 @@ UPDATE SET `uuid` = 24 WHERE `id` BETWEEN 1 AND 10;
 DELETE * FROM mytable WHERE `id` = 1;
 DELETE * FROM mytable WHERE `id` BETWEEN 1 AND 10;
 SELECT * FROM mytable WHERE `id` = 1;
-SELECT `id` ,`name`,`uuid` FROM mytabel where `id` = 1;
+SELECT `id` ,`name`,`uuid` FROM mytabel WHERE `id` = 1;
+SELECT MIN(`id`) FROM mytabel;
+SELECT `id`,`name` FROM mytable WHERE `id` =  (SELECT MIN(`id`) FROM mytable);
+SELECT MIN(`id`) AS smallest,`id`,`name` FROM mytable ;
+SELECT * FROM mytable ORDER BY `name` DESC;
+SELECT * FROM mytable ORDER BY `name` ASC;
+
