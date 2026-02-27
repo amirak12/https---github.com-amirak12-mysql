@@ -10,5 +10,5 @@ UPDATE SET `uuid` = 24 WHERE `id` = 1 ;
 UPDATE SET `uuid` = 24 WHERE `id` BETWEEN 1 AND 10;
 DELETE * FROM mytable WHERE `id` = 1;
 DELETE * FROM mytable WHERE `id` BETWEEN 1 AND 10;
-
-  
+SELECT * FROM mytable WHERE `id` = 1;
+SELECT `id` ,`name`,`uuid` FROM mytabel where `id` = 1;
