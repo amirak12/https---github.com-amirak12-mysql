@@ -1,4 +1,4 @@
-mysql commands? dorod to salmasi
+mysql commands? dorod bar ostad shir mohamadi
 CREATE DATABASE mydb;
 DROP DATABASE mydb;
 DROP TABLE mytable;
