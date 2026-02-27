@@ -17,8 +17,10 @@ SELECT `id`,`name` FROM mytable WHERE `id` =  (SELECT MIN(`id`) FROM mytable);
 SELECT MIN(`id`) AS smallest,`id`,`name` FROM mytable ;
 SELECT MAX(`id`) FROM mytabel;
 SELECT `id`,`name` FROM mytable WHERE `id` =  (SELECT MAX(`id`) FROM mytable);
-SELECT MAX(`id`) AS smallest,`id`,`name` FROM mytable ;
+SELECT MAX(`id`) AS smallest,`id`,`name` FROM mytable;
 SELECT COUNT(*) AS maxnames FROM mytable;
+SELECT `name` AS LastNameInDataBase FROM mytable WHERE `id` = (SELECT COUNT(*) FROM mytable);
+SELECT `name` AS LastNameInDataBase FROM mytable WHERE `id` = (SELECT MAX(`id`) FROM mytable);
 SELECT * FROM mytable ORDER BY `name` DESC;
 SELECT * FROM mytable ORDER BY `name` ASC;
 
