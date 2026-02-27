@@ -8,3 +8,4 @@ CREATE TABLE mytable(id INT() AUTO_INCREMENT ,name VARCHAR(50),uuid int(40),PRIM
 ALTER TABLE mytable ADD COLUMN myfield INT(30)
 ALTER TABLE mytable REMOVE COLUMN myfield INT(30)
 INSERT INTO TABLENAME(`name`,`uuid`) VALUES("kos",12312),("mamad",1324);
+UPDATE SET `uuid` = 24 WHERE `id` = 1;
