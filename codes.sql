@@ -24,5 +24,3 @@ SELECT `name` AS LastNameInDataBase FROM mytable WHERE `id` = (SELECT MAX(`id`) 
 SELECT * FROM mytable ORDER BY `name` DESC;
 SELECT * FROM mytable ORDER BY `name` ASC;
 SELECT teachers.name,students.name FROM table1 INNER JOIN ON teachers.pcode = student.pcode; 
-
-
